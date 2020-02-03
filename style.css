@@ -95,7 +95,7 @@ nav {
   margin: auto;
   display: flex;
   align-items: center;
-  min-height: 10vh;
+  min-height: 8vh;
 }
 
 #logo {
@@ -110,7 +110,7 @@ nav {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 92vh;
   width: 95%;
   margin: 0 0 0 auto;
   display: flex;
@@ -337,6 +337,17 @@ footer ul {
   align-items: center;
 }
 
+@media screen and (max-width: 1500px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --text: 3rem;
+    --big: 8rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .hero {
     width: 100%;
@@ -347,7 +358,7 @@ footer ul {
   }
 
   /* Burger Meniu */
-  .burger {
+  .burger:focus-visible {
     position: relative;
     display: block;
     cursor: pointer;
@@ -426,11 +437,15 @@ footer ul {
   /* Footer Section */
   footer ul {
     order: 1;
+    justify-content: space-around;
   }
 
   footer h2 {
     order: 2;
     text-align: center;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 0rem;
   }
 }
+
+
