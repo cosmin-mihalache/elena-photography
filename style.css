@@ -337,7 +337,7 @@ footer ul {
   align-items: center;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1500px) {
   html {
     --header1: 3rem;
     --header2: 4.5rem;
